@@ -2061,7 +2061,7 @@ ul {
 }
 @media(max-width:991px){
   .responsive-mobile-menu {
-    top:30px;
+    top:20px;
   }
 }
 
@@ -2273,6 +2273,7 @@ ul {
 @media all and (max-width: 575px) {
   .navbar-area .nav-container .logo a img {
     width: 125px;
+    margin-top: .5em;
   }
 
   .nav-right-part {
@@ -3089,11 +3090,14 @@ ul {
 .footer-widget p {
   color: #7c7d94;
   font-size: 16px;
+  margin-top:-.5em;
 }
 .footer-widget .social-area {
   margin-top: 26px;
 }
-
+#footmenu{
+  margin-bottom: 0px;
+}
 /*---------------------------------------------------
 	footer widget styles
 ----------------------------------------------------*/
@@ -4679,8 +4683,60 @@ ul.solarsystem li.saturn.bottom-2 {
   .featmob{
     display: block;
   }
+  .mobsign{
+    display:none;
+  }
+}
+@media only screen and (min-width:992px){
+  .desksign{
+    display:none !important;
+  }
 }
 .bengue{
   text-align: justify;
   margin-top: 2rem !important;
+}
+.logofoot {
+  font-size: 2em !important;
+  font-family: Outfit;
+  letter-spacing: 3px;
+  margin-top: -1em;
+  margin-bottom:-.5em !important;
+}
+.hotfoot{
+  color:#A1F0E7
+}
+#iconfoot{
+margin-right:10px;
+}
+.mobhover{
+  font-size: 15px;
+  font-weight: 400;
+}
+.mobhover:hover{
+  color:#589C81;
+}
+.footertag{
+  width:80%;
+  font-size: .73em !important;
+  font-weight: 200;
+}
+@media (min-width: 992px){
+  #footermenu{
+    margin-top:7em;
+  }
+}
+.poldate{
+  margin-top:6%;
+}
+.polhead{
+  margin-top:1em;
+  font-weight: 800;
+}
+.pripro{
+  margin-top:5em;
+  margin-bottom:5em;
+}
+#prifooter{
+  color:white !important;
 }
