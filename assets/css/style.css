@@ -3297,6 +3297,11 @@ ul {
   font-size: 16px;
   letter-spacing: 0.5px;
 }
+@media(max-width:387px){
+  #discoverbtn{
+    margin-top:1em;
+  }
+}
 
 .banner-area.style-2 {
   background: var(--main-gradient);
@@ -3556,6 +3561,7 @@ ul {
   background-size: 101% 100%;
   background-position: center !important;
   padding: 111px 0;
+  margin-top:3rem;
 }
 .app-screen-area-2 .animated-thumb {
   position: relative;
@@ -4673,5 +4679,8 @@ ul.solarsystem li.saturn.bottom-2 {
   .featmob{
     display: block;
   }
-  
+}
+.bengue{
+  text-align: justify;
+  margin-top: 2rem !important;
 }
