@@ -737,7 +737,7 @@ ul {
   top: 19px;
   height: 1px;
   width: 207px;
-  background: var(--main-color);
+  background:#fff;
 }
 .section-title .sub-title {
   color: var(--main-color);
@@ -1162,7 +1162,7 @@ ul {
 }
 .form-check .form-check-label {
   color: var(--heading-color);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /*------------------------------------------------
@@ -3517,7 +3517,7 @@ ul {
   font-size: 18px;
   font-weight: 900;
   text-transform: capitalize;
-  letter-spacing: inherit;
+  letter-spacing: .8px;
   margin-bottom: 0;
 }
 .single-price.style-2 .price-details {
@@ -3538,7 +3538,7 @@ ul {
   font-size: 14px;
   color: #707070;
   font-weight: 800;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 .single-price.style-2 .btn {
   height: 45px;
@@ -3548,7 +3548,7 @@ ul {
 }
 .single-price.style-2 .pricing-list {
   text-align: left;
-  padding: 31px 0 0px;
+  padding: 0px 0 0px;
 }
 .single-price.style-2 .pricing-list li:last-child {
   margin-bottom: 0;
@@ -4007,12 +4007,12 @@ ul.solarsystem li.saturn.bottom-2 {
 }
 .banner-area.style-4 .banner-inner h1 {
   font-size: 50px;
-  color: #1d2a3b;
+  color: #f2fff8;
   margin-bottom: 28px;
   line-height: initial;
 }
 .banner-area.style-4 .banner-inner p {
-  color: #1d2a3b;
+  color: #fff;
 }
 .banner-area.style-4 .banner-inner .btn-area {
   animation: 1.5s 0.9s fadeInLeft both;
@@ -4649,6 +4649,7 @@ ul.solarsystem li.saturn.bottom-2 {
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
   font-weight: 750;
+  letter-spacing: 1px;
 }
 .featul{
   text-align: left;
@@ -4703,6 +4704,13 @@ ul.solarsystem li.saturn.bottom-2 {
   margin-top: -1em;
   margin-bottom:-.5em !important;
 }
+.logofootwhite {
+  font-size: 2em !important;
+  font-family: Outfit;
+  letter-spacing: 3px;
+  margin-top: -1em;
+  margin-bottom:-.5em !important;
+}
 .hotfoot{
   color:#A1F0E7
 }
@@ -4740,3 +4748,48 @@ margin-right:10px;
 #prifooter{
   color:white !important;
 }
+.single-input-wrap select {
+  height: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.102);
+  border-radius: 5px;
+  width: 100%;
+  color: #747e8c;
+  font-size: 15px;
+  padding: 0 0px 0 30px;
+  position: relative;
+}
+
+@media(min-width:992px){
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+}
+.onboardbutton{
+  text-align: center;
+}
+.getstartedback{
+  background: var(--main-gradient) !important;
+}
+#started{
+  background: none !important;
+}
+.knowplans{
+  text-align: start !important;
+  margin:-1.8em 0px 1em 1em !important;
+  font-size: 12px;
+}
+.Hotlogo{
+  color:#A1F0E7;
+  font-weight: 750;
+  letter-spacing: 2px;
+}
+.Lerlogo{
+  letter-spacing:2px;
+}
+.req{
+  font-size:small;
+  vertical-align: text-top;
+}
+
+
