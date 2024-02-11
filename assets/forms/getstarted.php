@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $country = $_POST["country"];
     
     // Compose email message
-    $to = "your-email@example.com"; // Change this to your email address
+    $to = "info@hotler.app"; // Change this to your email address
     $subject = "New form submission";
     $message = "Name: $name\n";
     $message .= "Email: $email\n";
