@@ -3,9 +3,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // Require necessary PHPMailer files
-require 'assets/forms/PHPMailer/src/Exception.php';
-require 'assets/forms/PHPMailer/src/PHPMailer.php';
-require 'assets/forms/PHPMailer/src/SMTP.php';
+require '/assets/forms/PHPMailer/src/Exception.php';
+require '/assets/forms/PHPMailer/src/PHPMailer.php';
+require '/assets/forms/PHPMailer/src/SMTP.php';
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
