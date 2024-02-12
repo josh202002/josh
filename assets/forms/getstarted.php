@@ -1,6 +1,15 @@
 <?php
+// Include PHPMailer classes manually
+require 'assets/forms/PHPMailer/src/PHPMailer.php';
+require 'assets/forms/PHPMailer/src/Exception.php';
+require 'assets/forms/PHPMailer/src/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
+    // Retrieve form data
     $name = $_POST['name'];
     $email = $_POST['email'];
     $contact = $_POST['contact'];
@@ -9,23 +18,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $rooms = $_POST['rooms'];
     $country = $_POST['country'];
 
-    // Construct email message
-    $message = "Name: $name\n";
-    $message .= "Email: $email\n";
-    $message .= "Contact Number: $contact\n";
-    $message .= "Organization: $organization\n";
-    $message .= "Subscription: $subscription\n";
-    $message .= "Number of Rooms: $rooms\n";
-    $message .= "Country: $country\n";
+    // Compose email message
+    $message = "
+    <h2>New Registration Details</h2>
+    <p><strong>Full Name:</strong> $name</p>
+    <p><strong>Contact Email:</strong> $email</p>
+    <p><strong>Contact Number:</strong> $contact</p>
+    <p><strong>Organization Name:</strong> $organization</p>
+    <p><strong>Subscription:</strong> $subscription</p>
+    <p><strong>Number of Rooms:</strong> $rooms</p>
+    <p><strong>Country:</strong> $country</p>
+    ";
 
-    // Send email
-    if (mail($to, $subject, $message)) {
-        echo "Thank you! Your form has been submitted.";
-    } else {
-        echo "Oops! Something went wrong.";
+    // Create a new PHPMailer instance
+    $mail = new PHPMailer(true);
+
+    try {
+        // Set SMTP settings
+        $mail->isSMTP();
+        $mail->Host = 'smtp.elasticmail.com'; // Your SMTP server host
+        $mail->Port = 2525; // Your SMTP server port
+        $mail->SMTPAuth = true; // Enable SMTP authentication
+        $mail->Username = 'web@hotler.app'; // SMTP username
+        $mail->Password = '09EE51D19A26E79B8D2092FE084CBD124729'; // SMTP password
+        $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+
+        // Set email headers
+        $mail->setFrom($email, $name); // Sender's email address and name
+        $mail->addAddress('info@hotler.app', 'Get Start with Hotler'); // Recipient's email address and name
+        $mail->Subject = 'New Registration Details'; // Subject of the email
+        $mail->isHTML(true); // Set email format to HTML
+        $mail->Body = $message; // Body of the email
+
+        // Send email
+        $mail->send();
+        echo 'Message has been sent';
+        // Redirect to a thank you page or display a success message
+    } catch (Exception $e) {
+        echo 'Message could not be sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
     }
 } else {
-    echo "Error: Method not allowed";
+    // Redirect to an error page or display an error message
+    echo 'Form submission method not allowed';
 }
-
 ?>
