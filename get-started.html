@@ -75,9 +75,7 @@
                         <li>
                             <a href="contact.html">contact</a>
                         </li>
-                        <li>
-                            <a href="#">get started</a>
-                        </li>
+                        
                         <li class="desksign">
                             <a href="contact.html">sign in</a>
                         </li>
@@ -122,7 +120,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <form class="login-form default-form-wrap" action="https://formcarry.com/s/Ww7oh4zMGxe" method="post">
+                    <form class="login-form default-form-wrap" action="https://formcarry.com/s/Ww7oh4zMGxe" enctype="multipart/form-data" method="post">
                         <div class="single-input-wrap mb-4">
                             <label class="form-label" for="name">full name</label>
                             <input type="text" id="name" placeholder="eg: john doe" name="name"required>
@@ -133,7 +131,7 @@
                         </div>
                         <div class="single-input-wrap mb-4">
                             <label class="form-label" for="contact">contact number</label>
-                            <input type="tel" id="contact" name="contact" placeholder="+1 123 4567 890" required>
+                            <input type="number" id="contact" name="contact" placeholder="+1 123 4567 890" required>
                         </div>
                         <div class="single-input-wrap mb-4">
                             <label class="form-label" for="organization">organization name</label>
@@ -412,16 +410,20 @@
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </select>
                         </div>
+                        <div class="single-input-wrap mb-4">
+                            <label class="form-label" for="referral">referral</label>
+                            <input type="text" id="referral" name="referral" placeholder="referral id">
+                        </div>
                         <div class="single-input-wrap mb4"></div>
                         <div class="row">
                             <div class="col">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="accept" required>
-                                    <label class="form-check-label" for="accept">I have read and agree to Hotler's <span style="font-weight:900px; font-size:13px;"><a href="privacy-policy.html"><b>privacy policy</b></a></span> and data processing practices</label>
+                                    <label class="form-check-label" for="accept">I have read and agree to Hotler's <span style="font-weight:900px; font-size:13px;"><a href="privacy-policy.html"><b>privacy policy</b></a></span> and <span style="font-weight:900px; font-size:13px;"><a href="terms-and-conditions.html"><b>terms and conditions</b></a></span></label>
                                 </div>  
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-base w-100">get started</button>
+                        <button id="partnerpro" type="submit" class="btn btn-base w-100">get started</button>
                     </form>
                 </div>
             </div>
@@ -433,95 +435,93 @@
 
      <!-- contact-Area Start-->
     <section class="contact-area pd-top-150 mt-250">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact-inner">
-                        <div class="row no-gutters">
-                            <div class="col-lg-5">
-                                <h2 class="mt-n1">Contact with Us</h2>
-                                <p class="pe-5">Subscribe to our newsletter and we will bring you the latest news. Roin tincidunt nisl et odio faucibus</p>
-                                <div class="footer-widget widget mt-5">
-                                    <a class="logo" href="index.html"><img src="assets/img/logo-2.png" alt="#"></a>
-                                    <h6>(+1) 123-4567-8910 </h6>
-                                    <p>New York, NY 256364, United States contact@example.com</p>
-                                    <ul class="social-area">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                    </ul>
+        
+    <!-- contact-Area end-->
+
+    <!-- footer area start -->
+    <footer class="footer-area footer-area-2 style-white">
+        <!-- subscribe-Area Start-->
+        <section class="subscribe-area" id="subscribe-area">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="subscribe-inner">
+                            <div class="row no-gutters">
+                                <div class="col-xl-5 col-lg-6">
+                                    <h2>Partner with Us!</h2>
+                                    <p class="pe-5">Refer hotels and restaurants to Hotler and earn commissions for every successful partnership.</p>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 offset-lg-1 align-self-center">
-                                <form class="contact-form">
-                                    <div class="single-input-wrap mb-4">
-                                        <input type="text" placeholder="Enter Your Full Name">
+                                <form class="col-lg-6 offset-xl-1 align-self-center">
+                            
+                                    <div class="single-input-wrap">
+                                        <input type="text" placeholder="Name" class="mb-2">
+                                        <input type="text" placeholder="Enter Your Email Address" class="mb-2">
+                                        
                                     </div>
-                                    <div class="single-input-wrap mb-4">
-                                        <input type="text" placeholder="Enter Your Email Address">
+                                    <div class="text-end">
+                                    <button class="btn btn-base" type="submit" >Sign Up</button>
                                     </div>
-                                    <div class="single-input-wrap mb-4">
-                                        <textarea rows="5" placeholder="Enter Your Project Details...."></textarea>
-                                    </div>                                    
-                                    <button type="submit" class="btn btn-base">Submit your project</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- contact-Area end-->
-
-    <!-- footer area start -->
-    <footer class="footer-area style-2">
+        </section>
+        <!-- subscribe-Area end-->
         <div class="footer-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-6">
-                        <div class="footer-widget widget widget_link">
-                            <h6 class="widget-title">Menu</h6>
-                            <ul>
-                                <li><a href="about.html"><i class="fas fa-angle-right"></i>About</a></li>
-                                <li><a href="service.html"><i class="fas fa-angle-right"></i>Service</a></li>
-                                <li><a href="team.html"><i class="fas fa-angle-right"></i>Team</a></li>
-                                <li><a href="blog.html"><i class="fas fa-angle-right"></i>Blog</a></li>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="footer-widget widget">
+                            <a class="logo" href="index.html"><img src="assets/img/H.png" alt="#" height="100px" width="100px"></a><br>
+                            <h6 class="logofoot"><span class="hotfoot">Hot</span>ler</h6>
+                            <p class="footertag">Crafting Hospitality Excellence, One Stay at a Time.</p>
+                             
+                             <p><i class="fa-solid fa-envelope mt-4" id="iconfoot"></i><a class="mobhover" href="mailto:info@hotler.app">info@hotler.app</a></p>
+                            <ul class="social-area">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-4 col-6">
+                    <div class="col-lg-2 col-6" id="footermenu">
                         <div class="footer-widget widget widget_link">
-                            <h6 class="widget-title">About Us</h6>
+                            <h6 class="widget-title" id="footmenu">Menu</h6>
                             <ul>
-                                <li><a href="about.html"><i class="fas fa-angle-right"></i>Company</a></li>
-                                <li><a href="about.html"><i class="fas fa-angle-right"></i>Leadership</a></li>
-                                <li><a href="about.html"><i class="fas fa-angle-right"></i>Diversity</a></li>
-                                <li><a href="about.html"><i class="fas fa-angle-right"></i>Jobs</a></li>
+                                <li><a href="index.html"><i class="fas fa-angle-right"></i>home</a></li>
+                                <li><a href="features.html"><i class="fas fa-angle-right"></i>features</a></li>
+                                <li><a href="about.html"><i class="fas fa-angle-right"></i>about</a></li>
+                                <li><a href="get-started.html"><i class="fas fa-angle-right"></i>get started</a></li>
+                                
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 offset-lg-1 col-lg-3 col-6">
+                    
+                    <div class="offset-lg-1 col-lg-2 col-6" id="footermenu">
                         <div class="footer-widget widget widget_link">
-                            <h6 class="widget-title">Services</h6>
+                            <h6 class="widget-title" id="footmenu">Our Link</h6>
                             <ul>
-                                <li><a href="service.html"><i class="fas fa-angle-right"></i>Graphics </a></li>
-                                <li><a href="service.html"><i class="fas fa-angle-right"></i>Web Design </a></li>
-                                <li><a href="service.html"><i class="fas fa-angle-right"></i>Web Development </a></li>
-                                <li><a href="service.html"><i class="fas fa-angle-right"></i>SEO</a></li>
+                                <li><a href="https://hotler.io/manager/login"><i class="fas fa-angle-right"></i>sign in</a></li>
+                                <li><a href="contact.html"><i class="fas fa-angle-right"></i>help </a></li>
+                                <li><a href="faq.html"><i class="fas fa-angle-right"></i>faq </a></li>
+                                
+                                <li><a href="get-started.html#partnerpro"><i class="fas fa-angle-right"></i>partner program</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 offset-lg-1 col-lg-3 col-6">
+                    <div class="offset-lg-1 col-lg-2 col-6" id="footermenu">
                         <div class="footer-widget widget widget_link">
-                            <h6 class="widget-title">Our Link</h6>
+                            <h6 class="widget-title" id="footmenu">Services</h6>
                             <ul>
-                                <li><a href="contact.html"><i class="fas fa-angle-right"></i>Help </a></li>
-                                <li><a href="contact.html"><i class="fas fa-angle-right"></i>Support </a></li>
-                                <li><a href="contact.html"><i class="fas fa-angle-right"></i>Clients </a></li>
-                                <li><a href="contact.html"><i class="fas fa-angle-right"></i>Contacts</a></li>
+                                <li><a href="privacy-policy.html"><i class="fas fa-angle-right"></i>privacy policy </a></li>
+                                <li><a href="terms-of-service.html"><i class="fas fa-angle-right"></i>terms of service</a></li>
+                                <li><a href="service.html"><i class="fas fa-angle-right"></i>cookie policy</a></li>
+                                <li><a href=""><i class="fas fa-angle-right"></i>feedback</a></li>
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -531,14 +531,9 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 align-self-center">
-                        <div class="copyright-area">
-                            <p>© Copyright 2021 All rights reserved.</p>       
-                        </div>
-                    </div>
-                    <div class="col-md-6 align-self-center text-md-end">
-                        <div class="author-area">
-                            <p>Made theme by <a href="https://themeforest.net/user/themefie">Themefie.</a></p>       
+                    <div class="col-lg-12 align-self-center">
+                        <div class="copyright-area text-center">
+                            <p>© 2024 Hotler | All rights reserved.</p>       
                         </div>
                     </div>
                 </div>                
@@ -546,6 +541,7 @@
         </div>
         <!--Footer bottom-->
     </footer>
+        <!-- footer area end 
     <!-- footer area end -->
 
     <!-- back-to-top end -->

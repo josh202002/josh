@@ -1528,6 +1528,7 @@ ul {
 .navbar-area .nav-container .navbar-collapse .navbar-nav {
   display: block;
   width: 100%;
+  margin-left:30px;
 }
 .navbar-area .nav-container .navbar-collapse .navbar-nav li {
   margin-top: 0;
@@ -4791,5 +4792,6 @@ margin-right:10px;
   font-size:small;
   vertical-align: text-top;
 }
+
 
 
